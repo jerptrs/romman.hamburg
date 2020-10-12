@@ -1,0 +1,51 @@
+<div class="contact" fxFlex [fxLayout]="(isHandset | async) ? 'column' : 'row'" fxLayoutAlign="center center">
+  <!-- <div class="text" [fxFlex]="(isHandset | async ) ? 100 : 50">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente dolore et reiciendis eius deleniti libero
+    quam cum corporis similique tempore repellendus quaerat suscipit, amet facilis rem voluptate distinctio! Illo.
+  </div> -->
+  <div [fxFlex]="(isHandset | async ) ? 100 : 50" fxLayout="column">
+    <span fxFlex fxLayoutAlign="center start" fxLayout="column">
+      <div fxLayoutAlign="center center">
+        <fa-icon [icon]="phoneIcon" size="2x"></fa-icon> <span class="mat-h2">Call Us</span>
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum odio provident ea, doloremque, harum soluta aliquam cum esse, nulla omnis totam vero! At placeat alias tenetur beatae, reprehenderit architecto.
+      </div>
+      
+    </span>
+    
+    <span fxFlex fxLayoutAlign="center start" fxLayout="column">
+      <div fxLayoutAlign="center center">
+        <fa-icon [icon]="envelopeIcon" size="2x"></fa-icon> <span class="mat-h2">Message Us</span>
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum odio provident ea, doloremque, harum soluta aliquam cum esse, nulla omnis totam vero! At placeat alias tenetur beatae, reprehenderit architecto.
+      </div>
+      
+    </span>
+
+    <span fxFlex fxLayoutAlign="center start" fxLayout="column">
+      <div fxLayoutAlign="center center">
+        <fa-icon [icon]="clockIcon" size="2x"></fa-icon> <span class="mat-h2">Open Hours</span>
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum odio provident ea, doloremque, harum soluta aliquam cum esse, nulla omnis totam vero! At placeat alias tenetur beatae, reprehenderit architecto.
+      </div>
+      
+    </span>
+
+    <span fxFlex fxLayoutAlign="center start" fxLayout="column">
+      <div fxLayoutAlign="center center">
+        <fa-icon [icon]="mapMarkerIcon" size="2x"></fa-icon> <span class="mat-h2">Visit Us</span>
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum odio provident ea, doloremque, harum soluta aliquam cum esse, nulla omnis totam vero! At placeat alias tenetur beatae, reprehenderit architecto.
+      </div>
+      
+    </span>
+  </div>
+</div>

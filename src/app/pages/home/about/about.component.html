@@ -1,0 +1,56 @@
+<div class="about" fxLayout.lt-md="column" fxLayout.gt-sm="row wrap" style="height: 100%;">
+  <div class="text" fxFlex.gt-sm="50">
+    <img class="about-image" src="assets/about.jpg" />
+  </div>
+
+  <div class="text" fxFlex.gt-sm="50">
+    <span class="mat-h1">Romman</span>
+
+    <p>
+      We are more than a restaurant. We are more than culture, more than art. Romman came to be in summer 2020, found
+      by various people who came together for various reasons. Friends, old and new met here at Romman. We came and we
+      stayed. Romman is an idea- our idea. And yours. It is a special place that brought us together, it is a
+      territory where everyone can just be. As this place grows everyday, so do we: in our minds, souls and
+      friendship. Romman is not a restaurant. It is an idea. An idea that keeps evolving. Be part of it. We invite you
+      to visit us - or if you'd like, we also deliver in Eppendorf and Winterhude. Just hit your order and your
+      location on Whatsapp.
+    </p>
+  </div>
+
+  <div fxFlex="100" fxLayout="row wrap">
+    <div class="text" fxFlex="100" fxLayout="column">
+      <span class="mat-h1">Our Service</span>
+      <span>We serve our guests a wide variaty of authentic syrian food, our highlights include:</span>
+    </div>
+
+    <div class="services" fxFlex fxLayout="row wrap" fxLayoutAlign="center center">
+      <div [fxFlex]="(isHandset | async) ? 100 : 50" fxLayoutAlign="start center">
+        <fa-stack>
+          <fa-icon [icon]="circleIcon" style="color: #cc3029;" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="utensilsIcon" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack> Falafel
+      </div>
+
+      <div [fxFlex]="(isHandset | async) ? 100 : 50" fxLayoutAlign="start center">
+        <fa-stack>
+          <fa-icon [icon]="circleIcon" style="color: #cc3029;" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="utensilsIcon" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack> Manakiesch
+      </div>
+
+      <div [fxFlex]="(isHandset | async) ? 100 : 50" fxLayoutAlign="start center">
+        <fa-stack>
+          <fa-icon [icon]="circleIcon" style="color: #cc3029;" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="wineBottleIcon" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack> Fritz-Cola & Co
+      </div>
+      
+      <div [fxFlex]="(isHandset | async) ? 100 : 50" fxLayoutAlign="start center">
+        <fa-stack>
+          <fa-icon [icon]="circleIcon" style="color: #cc3029;" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="heartIcon" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack> And much more!
+      </div>
+    </div>
+  </div>
+</div>

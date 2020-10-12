@@ -1,0 +1,28 @@
+@import '../../../variables';
+
+.mat-toolbar, .mat-toolbar-primary {
+  height: 65px;
+  .brand {
+    img {
+      height: 50px;
+      width: auto;
+    }
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+    font-weight: 400;
+    &.active {
+      color: $brand-color-red;
+    }
+  }
+
+  a ~ a {
+    margin-left: 8px;
+  }
+}

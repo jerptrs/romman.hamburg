@@ -1,0 +1,14 @@
+<div class="location" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div [fxFlex]="(isHandset | async) ? 100 : 50" fxLayout="row wrap" class="text">
+    <span class="mat-h1" fxFlex="100" fxLayoutAlign="center center">Visit Us!</span>
+    <span fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+      <p>Eppendorfer Marktplatz 21</p>
+      22147 Hamburg
+    </span>
+  </div>
+  <div [fxFlex]="(isHandset | async) ? 100 : 50">
+    <div class="map" leaflet [leafletOptions]="options">
+
+    </div>
+  </div>
+</div>

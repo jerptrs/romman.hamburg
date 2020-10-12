@@ -1,0 +1,44 @@
+@import '../variables';
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1500;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  background-color: $primary;
+  width: 250px;
+  .brand {
+    height: 200px;
+    img {
+      height: auto;
+      width: 220px;
+    }
+  }
+  .mat-list-item {
+    color: $dark-grey;
+    &:hover {
+      color: $brand-color-red;
+      transition: .2s color;
+    }
+    &.active {
+      color: $brand-color-red;
+    }
+  }
+}
+
+.mat-toolbar.mat-primary {
+  height: 64px;
+  .brand {
+    height: 64px;
+    img {
+      height: 50px;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="not-found" fxLayout="column">
+  <span fxFlex="20" fxLayout="column" fxLayoutAlign="center center">
+    <span class="text mat-display-1">
+      404 Not Found
+    </span>
+    <br/>
+    <span class="text">
+      The page you were looking for was not found.
+    </span>
+  </span>
+
+  <div class="image" fxFlex="60" fxLayoutAlign="center center">
+    <img src="https://via.placeholder.com/200">
+  </div>
+  
+  <div class="buttons" fxFlex="20" fxLayoutAlign="center center">
+    <button mat-raised-button color="accent" (click)="return()">Previous Page</button>
+
+    <button mat-raised-button color="accent" routerLink="/home">Home</button>
+  </div>
+</div>

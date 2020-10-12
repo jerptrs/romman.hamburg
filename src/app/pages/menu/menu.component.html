@@ -1,0 +1,90 @@
+<div class="menu" fxFlex="100" fxLayout="row wrap" fxLayoutGap="15px">
+  <div fxLayout="row wrap">
+    <div [fxFlex]="(isHandset |async) ? 100 : 100" fxLayout="column">
+      <span class="mat-display-1">Menu</span>
+      <span class="description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aperiam voluptate consequatur ab aut quis
+        officiis veritatis dolorum cupiditate. Porro accusantium ratione, ea temporibus dolores natus eos debitis
+        consectetur officiis!
+      </span>
+    </div>
+  </div>
+
+  <mat-accordion fxLayout="column" fxFlex="100" class="headers-align">
+    <mat-expansion-panel expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="mat-h2">
+          Beverages
+        </mat-panel-title>
+        <mat-panel-description *ngIf="!(isHandset | async)">
+          Fritz-Kola, Fritz-Limo, Mischmasch, Mate, Beer and Co.
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="item" [fxLayout]="(isHandset | async) ? 'column' : 'row wrap'">
+        <img class="image mat-elevation-z5" src="assets/brot.jpg">
+        <div class="text" fxLayout="column">
+          <span class="title mat-h2">Food Name</span>
+          <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt unde
+            necessitatibus pariatur, soluta excepturi officia adipisci ad iusto aut, ea nemo consequuntur quia maxime
+            quo
+            rerum nihil! Excepturi, porro.</span>
+        </div>
+        <div class="price">
+          <span fxLayoutAlign="center center">5,00€</span>
+        </div>
+      </div>
+
+      <div class="item" [fxLayout]="(isHandset | async) ? 'column' : 'row wrap'">
+        <img class="image mat-elevation-z5" src="assets/brot.jpg">
+        <div class="text" fxLayout="column">
+          <span class="title mat-h2">Food Name</span>
+          <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt unde
+            necessitatibus pariatur, soluta excepturi officia adipisci ad iusto aut, ea nemo consequuntur quia maxime
+            quo
+            rerum nihil! Excepturi, porro.</span>
+        </div>
+        <div class="price">
+          <span fxLayoutAlign="center center">5,00€</span>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="mat-h2">
+          Meals
+        </mat-panel-title>
+        <mat-panel-description *ngIf="!(isHandset | async)">
+          Falafel, Manakiesch, Salad and more
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="item" [fxLayout]="(isHandset | async) ? 'column' : 'row wrap'">
+        <img class="image mat-elevation-z5" src="assets/brot.jpg">
+        <div class="text" fxLayout="column">
+          <span class="title mat-h2">Food Name</span>
+          <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt unde
+            necessitatibus pariatur, soluta excepturi officia adipisci ad iusto aut, ea nemo consequuntur quia maxime
+            quo
+            rerum nihil! Excepturi, porro.</span>
+        </div>
+        <div class="price">
+          <span fxLayoutAlign="center center">5,00€</span>
+        </div>
+      </div>
+
+      <div class="item" [fxLayout]="(isHandset | async) ? 'column' : 'row wrap'">
+        <img class="image mat-elevation-z5" src="assets/brot.jpg">
+        <div class="text" fxLayout="column">
+          <span class="title mat-h2">Food Name</span>
+          <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt unde
+            necessitatibus pariatur, soluta excepturi officia adipisci ad iusto aut, ea nemo consequuntur quia maxime
+            quo
+            rerum nihil! Excepturi, porro.</span>
+        </div>
+        <div class="price">
+          <span fxLayoutAlign="center center">5,00€</span>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

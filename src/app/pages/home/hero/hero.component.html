@@ -1,0 +1,20 @@
+<div class="hero" fxLayout="column" [ngStyle]="{'height': (isHandset | async) ? 'calc(100vh - 64px)' : '100vh'}">
+  <div fxFlex="70" fxLayout="row wrap" fxLayoutAlign="center center">
+    <span [@fadeIn]="animationDelay" fxFlex="100" fxFlexOffset.xs="5" fxFlexOffset.sm="5" fxFlexOffset.md="10" fxFlexOffset.lg="15"
+      fxFlexOffset.xl="20" ngClass.xs="mat-display-2" class="mat-display-3">
+      We Go Wild
+    </span>
+    <hr fxFlex="100" fxFlexOffset.xs="5" fxFlexOffset.sm="5" fxFlexOffset.md="10" fxFlexOffset.lg="15"
+      fxFlexOffset.xl="20" />
+    <span [@fadeIn]="animationDelay" fxFlex="100" fxFlexOffset.xs="10" fxFlexOffset.sm="15" fxFlexOffset.md="15" fxFlexOffset.lg="20"
+      fxFlexOffset.xl="25" ngClass.xs="mat-display-1" class="mat-display-2">
+      With Kindness
+    </span>
+  </div>
+
+  <div fxFlex="30" fxLayout="row wrap" fxLayoutAlign="center center">
+    <button routerLink="/menu" mat-raised-button>View Our Menu</button>
+
+    <button (click)="scrollTo('location')" mat-raised-button>Our Location</button>
+  </div>
+</div>

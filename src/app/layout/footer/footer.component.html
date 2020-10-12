@@ -1,0 +1,23 @@
+<div class="footer" fxLayout.xs="column" fxLayout="row wrap" fxLayoutAlign="start">
+  <div fxLayoutAlign="center center" fxFlex="100">
+    <img class="brand" src="assets/brand.png"/>
+  </div>
+  <div fxFlex="100" fxLayoutAlign="center start" fxFlexLayout="row wrap" fxLayoutGap="5%">
+    <div>
+      <!-- <span class="mat-h2">Social</span> -->
+      <div class="list" fxLayout="column">
+        <a href="{{instagramUrl}}" target="_blank"><fa-icon class="instagram" [icon]="instagramIcon"></fa-icon> Romman.Hamburg</a>
+        <a href="{{facebookUrl}}" target="_blank"><fa-icon class="facebook" [icon]="facebookIcon"></fa-icon> Romman.Hamburg</a>
+        <a href="{{whatsappUrl}}" target="_blank"><fa-icon class="whatsapp" [icon]="whatsappIcon"></fa-icon> {{whatsappNumber}}</a>
+      </div>
+    </div>
+    
+    <!-- <div>
+      <span class="mat-h2">Legals</span>
+      <div class="list" fxLayout="column">
+        <a routerLink="privacy">Privacy</a>
+        <a routerLink="imprint">Imprint</a>
+      </div>
+    </div> -->
+  </div>
+</div>

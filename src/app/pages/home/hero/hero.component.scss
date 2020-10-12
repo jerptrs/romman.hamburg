@@ -1,0 +1,28 @@
+@import '../../../../variables';
+@import '../../../../mixins';
+
+.hero {
+  width: auto;
+  background-image: linear-gradient(rgba($dark-grey, .5), rgba($dark-grey, .5)), url('^assets/background.jpg');
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $primary;
+  overflow: hidden;
+
+  span[class*='mat-display-'] {
+    margin: 0;
+  }
+
+  hr {
+    border: 2px solid $brand-color-red;
+  }
+
+  button {
+    background-color: #ebd29a;
+  }
+
+  button~button {
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+$primary: mat-color(mat-palette($mat-gray, 100));
+$accent: mat-color(mat-palette($mat-teal, A200, A100, A400));
+
+$dark-grey: mat-color(mat-palette($mat-grey, 900));
+
+$brand-color-red: #cc3029;
+$brand-color-brown: #ebd29a;
+$brand-color-teal: #009eb9;
+$brand-color-green: #0ba26f;
+
+$instagram-color: #833ab4;
+$facebook-color: #3b5998;
+$whatsapp-color: #25d366;

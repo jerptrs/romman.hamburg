@@ -1,0 +1,31 @@
+@import '../../../variables';
+
+.footer {
+  padding: 10px;
+  background: $primary;
+  .brand {
+    width: auto;
+    height: 100px;
+  }
+  .list {
+    a {
+      color: $dark-grey;
+      text-decoration: none;
+      &:hover {
+        color: $brand-color-red;
+        transition: .3s color;
+      }
+      fa-icon {
+        &.instagram {
+          color: $instagram-color;
+        }
+        &.facebook {
+          color: $facebook-color;
+        }
+        &.whatsapp {
+          color: $whatsapp-color;
+        }
+      }
+    }
+  }
+}

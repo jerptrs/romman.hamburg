@@ -1,0 +1,28 @@
+.about {
+  //height: 100vh;
+  width: auto;
+
+  .image {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .text {
+    padding: 5%;
+  }
+
+  .services {
+    padding-left: 5%;
+    font-size: 18px;
+    div {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.about-image {
+  height: auto;
+  width: 100%;
+}
