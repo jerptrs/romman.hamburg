@@ -1,4 +1,4 @@
-<div class="menu" fxFlex="100" fxLayout="row wrap" fxLayoutGap="15px">
+<div [@fadeIn]="animationDelay" class="menu" fxFlex="100" fxLayout="row wrap" fxLayoutGap="15px">
   <div fxLayout="row wrap">
     <div [fxFlex]="(isHandset |async) ? 100 : 100" fxLayout="column">
       <span class="mat-display-1">Menu</span>

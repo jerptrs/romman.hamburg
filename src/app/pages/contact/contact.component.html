@@ -1,9 +1,13 @@
-<div class="contact" fxFlex [fxLayout]="(isHandset | async) ? 'column' : 'row'" fxLayoutAlign="center center">
+<div  [@fadeIn]="animationDelay"class="contact" fxFlex fxLayout="row" fxLayoutAlign="center center">
   <!-- <div class="text" [fxFlex]="(isHandset | async ) ? 100 : 50">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente dolore et reiciendis eius deleniti libero
     quam cum corporis similique tempore repellendus quaerat suscipit, amet facilis rem voluptate distinctio! Illo.
   </div> -->
-  <div [fxFlex]="(isHandset | async ) ? 100 : 50" fxLayout="column">
+  <div fxFlex="50" fxLayout="column">
+    <span class="mat-display-1" fxFlex fxLayoutAlign="start center">
+      Catchy Phrase
+    </span>
+
     <span fxFlex fxLayoutAlign="center start" fxLayout="column">
       <div fxLayoutAlign="center center">
         <fa-icon [icon]="phoneIcon" size="2x"></fa-icon> <span class="mat-h2">Call Us</span>
@@ -14,6 +18,8 @@
       </div>
       
     </span>
+
+    <hr/>
     
     <span fxFlex fxLayoutAlign="center start" fxLayout="column">
       <div fxLayoutAlign="center center">
@@ -26,6 +32,8 @@
       
     </span>
 
+    <hr/>
+
     <span fxFlex fxLayoutAlign="center start" fxLayout="column">
       <div fxLayoutAlign="center center">
         <fa-icon [icon]="clockIcon" size="2x"></fa-icon> <span class="mat-h2">Open Hours</span>
@@ -37,6 +45,8 @@
       
     </span>
 
+    <hr/>
+
     <span fxFlex fxLayoutAlign="center start" fxLayout="column">
       <div fxLayoutAlign="center center">
         <fa-icon [icon]="mapMarkerIcon" size="2x"></fa-icon> <span class="mat-h2">Visit Us</span>
@@ -47,5 +57,7 @@
       </div>
       
     </span>
+
+    <hr/>
   </div>
 </div>
